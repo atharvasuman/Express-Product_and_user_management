@@ -22,6 +22,7 @@ A simple full-stack web app built using **HTML, CSS, and Node.js (Express)** tha
 
 ## 📁 Folder Structure
 
+```
 project-root/
 ├── server.js # Main backend file
 ├── src/
@@ -33,6 +34,7 @@ project-root/
 │ ├── products.json # Stores product info
 │ └── style.css # (Optional) CSS styles
 └── README.md
+```
 
 ---
 
