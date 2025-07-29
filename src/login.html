@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <div class="container">
+        <h2>Log In</h2>
+        <form action="/form1" method="POST" id="form1">
+        <input type="email" name="email" placeholder="Email" id="email" required/>
+        <input type="password" name="password" placeholder="Password" id="pass" required/>
+        <button id="btn" type="submit">Submit</button>
+        </form>
+        <h6>Don't have an account? <a href="/signup">SignUp</a></h6>
+        <a href="/">Home</a>
+    </div>
+</body>
+<script>
+    const form = document.getElementById("form1");
+    form1.addEventListener('submit', function(e){
+        const email = document.getElementById('email');
+        const pass = document.getElementById('pass');
+        fetch("/form1",{
+            method:"POST",
+            headers:{"Content-Type":"application/json"},
+            body:JSON.stringify({email,pass})
+        })
+        .then(res => res.json())
+        .then(data => {
+    if (data.message === "Wrong Password!") {
+        alert(data.message);
+    }
+});
+    });
+</script>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+    <div class="container">
+        <form method="post" action="/form3" id="form3">
+        <input type="text" name="name" id="name" placeholder="Name" required />
+        <!-- <input type="number" name="price" id="price" placeholder="Price" required /> -->
+        <input type="text" name="image" id="image" placeholder="Image URL" required />
+        <button id="btn">ADD</button>
+        </form>
+        <div style="display: none;" id="table">
+            <table border="1">
+                <thead>
+                    <th>Name</th>
+                    <th>Price</th>
+                    <th>Image</th>
+                    <th>Details</th>
+                </thead>
+                <tbody id="tbody"></tbody>
+            </table>
+        </div>
+        <a href="/">HOME</a>
+    </div>
+</body>
+<script>
+    const form = document.getElementById("form3");
+    form.addEventListener('submit', function(e){
+        e.preventDefault();
+        document.getElementById("table").style.display="block";
+        const name = document.getElementById("name").value;
+       // const price = document.getElementById("price").value;
+        const image = document.getElementById("image").value;
+        fetch("/form3",{
+            method: "POST",
+            headers: {"Content-Type":"application/json"},
+            body: JSON.stringify({name, image})
+        })
+        .then(res=>res.json())
+        .then(result =>{
+            if(result.message==="saved"){
+                const tr = document.createElement("tr");
+                const tbody= document.getElementById("tbody");
+
+                tr.innerHTML=
+                    `
+                    <td>${name}</td>
+                    <td>$${result.check.price}</td>
+                    <td><img src="${image}" width="50px"/></td>
+                    <td><a href="/details?name=${name}&image=${image}">Details</a></td>
+                    `
+                tbody.appendChild(tr);
+            }else{
+                alert(result.message);
+            }
+        })
+        .catch(err=>{
+            console.log(err);
+        })
+        form.reset();
+    })
+</script>
+</html>

@@ -1,0 +1,102 @@
+[
+  {
+    "name": "iPhone",
+    "brand": "Apple",
+    "price": 1299,
+    "storage": "256GB",
+    "ram": "6GB",
+    "battery": "4323mAh",
+    "email": "apple14@example.com",
+    "pass": "apple123"
+  },
+  {
+    "name": "Galaxy",
+    "brand": "Samsung",
+    "price": 1199,
+    "storage": "512GB",
+    "ram": "12GB",
+    "battery": "5000mAh",
+    "email": "samsung23@example.com",
+    "pass": "samsung123"
+  },
+  {
+    "name": "Pixel",
+    "brand": "Google",
+    "price": 999,
+    "storage": "128GB",
+    "ram": "12GB",
+    "battery": "5050mAh",
+    "email": "pixel8@example.com",
+    "pass": "pixel123"
+  },
+  {
+    "name": "OnePlus",
+    "brand": "OnePlus",
+    "price": 449,
+    "storage": "256GB",
+    "ram": "8GB",
+    "battery": "5000mAh",
+    "email": "oneplus11@example.com",
+    "pass": "oneplus123"
+  },
+  {
+    "name": "Xiaomi",
+    "brand": "Xiaomi",
+    "price": 699,
+    "storage": "256GB",
+    "ram": "12GB",
+    "battery": "4820mAh",
+    "email": "xiaomi13@example.com",
+    "pass": "xiaomi123"
+  },
+  {
+    "name": "Motorola",
+    "brand": "Motorola",
+    "price": 599,
+    "storage": "128GB",
+    "ram": "8GB",
+    "battery": "4400mAh",
+    "email": "motorola40@example.com",
+    "pass": "moto123"
+  },
+  {
+    "name": "Nothing",
+    "brand": "Nothing",
+    "price": 599,
+    "storage": "256GB",
+    "ram": "12GB",
+    "battery": "4700mAh",
+    "email": "nothing2@example.com",
+    "pass": "nothing123"
+  },
+  {
+    "name": "Realme",
+    "brand": "Realme",
+    "price": 399,
+    "storage": "256GB",
+    "ram": "16GB",
+    "battery": "5000mAh",
+    "email": "realmegt@example.com",
+    "pass": "realme123"
+  },
+  {
+    "name": "Vivo",
+    "brand": "Vivo",
+    "price": 899,
+    "storage": "256GB",
+    "ram": "12GB",
+    "battery": "4870mAh",
+    "email": "vivox90@example.com",
+    "pass": "vivo123"
+  },
+  {
+    "name": "ROG",
+    "brand": "Asus",
+    "price": 1099,
+    "storage": "512GB",
+    "ram": "16GB",
+    "battery": "6000mAh",
+    "email": "rog7@example.com",
+    "pass": "rog123"
+  }
+]

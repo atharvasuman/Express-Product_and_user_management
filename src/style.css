@@ -1,0 +1,147 @@
+body {
+    background: linear-gradient(120deg, #e0eafc 0%, #cfdef3 100%);
+    font-family: 'Segoe UI', Arial, sans-serif;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.container {
+    max-width: 500px;
+    margin: 60px auto;
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0 6px 32px rgba(0,0,0,0.10);
+    padding: 36px 32px 28px 32px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+input[type="email"]{
+    padding: 12px 10px;
+    border: 1px solid #c0cbda;
+    border-radius: 8px;
+    font-size: 16px;
+    background: #f9fafc;
+    transition: border-color .2s;
+}
+
+input[type="email"]:focus {
+    outline: none;
+    border-color: #2462b3;
+}
+
+input[type="password"]{
+    padding: 12px 10px;
+    border: 1px solid #c0cbda;
+    border-radius: 8px;
+    font-size: 16px;
+    background: #f9fafc;
+    transition: border-color .2s;
+}
+
+input[type="password"]:focus {
+    outline: none;
+    border-color: #2462b3;
+}
+
+input[type="text"] {
+    padding: 12px 10px;
+    border: 1px solid #c0cbda;
+    border-radius: 8px;
+    font-size: 16px;
+    background: #f9fafc;
+    transition: border-color .2s;
+}
+
+input[type="text"]:focus {
+    outline: none;
+    border-color: #2462b3;
+}
+
+button, button[type="submit"] {
+    background: #2462b3;
+    color: #fff;
+    padding: 12px 0;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    box-shadow: 0 2px 8px #bad0f6;
+    cursor: pointer;
+    transition: background .2s;
+    margin-top: 6px;
+}
+
+button:hover, button[type="submit"]:hover {
+    background: #123a6c;
+}
+
+#table {
+    margin-top: 36px;
+    animation: fadeIn 0.5s;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #f6faff;
+    box-shadow: 0 1px 8px #e1ecf8;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+table th, table td {
+    padding: 14px 10px;
+    text-align: center;
+    border-bottom: 1px solid #d6e2f3;
+}
+
+table th {
+    background: #2462b3;
+    color: #fff;
+    font-weight: 600;
+}
+
+table tr:nth-child(even) {
+    background: #eaf1fb;
+}
+
+table tr:last-child td {
+    border-bottom: none;
+}
+
+img {
+    border-radius: 6px;
+    box-shadow: 0 1px 6px #dde4ea;
+}
+
+a {
+    color: #1976d2;
+    text-decoration: none;
+    transition: color .2s;
+    display: inline-block;
+    margin-top: 20px;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #0d3d7e;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@media (max-width: 600px) {
+    .container {
+        padding: 18px 8px;
+    }
+    table th, table td {
+        font-size: 14px;
+        padding: 10px 4px;
+    }
+}
