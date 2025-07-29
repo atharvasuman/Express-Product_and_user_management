@@ -4,13 +4,55 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="style.css" />
+    <style>
+            body {
+                background: linear-gradient(120deg, #e0eafc 0%, #cfdef3 100%);
+                font-family: 'Segoe UI', Arial, sans-serif;
+                min-height: 100vh;
+                margin: 0;
+            }
+
+            .container {
+                max-width: 500px;
+                margin: 60px auto;
+                background: #fff;
+                border-radius: 16px;
+                box-shadow: 0 6px 32px rgba(0,0,0,0.10);
+                padding: 36px 32px 28px 32px;
+            }
+            .home {
+                display: flex;
+                justify-content: space-between;
+                gap: 16px;
+                margin-top: 24px;
+            }
+            a {
+                flex: 1;
+                text-align: center;
+                background: #2462b3;
+                color: #fff;
+                padding: 12px 0;
+                border: none;
+                border-radius: 8px;
+                font-size: 16px;
+                box-shadow: 0 2px 8px #bad0f6;
+                cursor: pointer;
+                text-decoration: none;
+                transition: background 0.2s ease;
+            }
+
+            a:hover {
+                background: #123a6c;
+            }
+    </style>
 </head>
 <body>
     <div class="container">
-        <h1>This is my HTML file.</h1>
-        <a href="/login">Login IN</a>
-        <a href="/signup">Sign UP</a>
+        <h1>Home Page</h1>
+        <div class="home">
+            <a href="/login">Login IN</a>
+            <a href="/signup">Sign UP</a>
+        </div>
     </div>
 </body>
 </html>
